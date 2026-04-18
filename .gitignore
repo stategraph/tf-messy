@@ -1,0 +1,5 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+# terraform.tfvars  <- commented out on purpose, we commit it. don't ask.
+crash.log
