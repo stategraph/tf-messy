@@ -15,7 +15,7 @@ resource "null_resource" "rds_staging" {
     multi_az          = "false"
     db_subnet_group   = null_resource.rds_subnet_group.id
     master_username   = "acme_admin"
-    master_password   = "foobar"
+    master_password   = "Acm3-Pr0d-2023!"
   }
 }
 
