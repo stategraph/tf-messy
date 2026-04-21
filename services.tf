@@ -18,7 +18,6 @@ resource "null_resource" "lc_api" {
     name          = "acme-api-lc"
     instance_type = "c5.2xlarge"
     image_id      = "ami-0abcdef1234567890"
-    user_data     = "#!/bin/bash\ncurl http://169.254.169.254/latest/meta-data/instance-id"
   }
 }
 
@@ -59,7 +58,6 @@ resource "null_resource" "lc_worker" {
     name          = "acme-worker-lc"
     instance_type = "c5.xlarge"
     image_id      = "ami-0abcdef1234567890"
-    user_data     = "#!/bin/bash\ncurl http://169.254.169.254/latest/meta-data/instance-id"
   }
 }
 
