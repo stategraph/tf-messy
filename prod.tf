@@ -28,7 +28,7 @@ resource "null_resource" "rds_primary" {
     db_subnet_group       = null_resource.rds_subnet_group.id
     vpc_security_group    = null_resource.sg_db.id
     master_username       = "acme_admin"
-    master_password       = var.db_password
+    master_password       = "foobar"
     backup_retention      = "30"
     storage_encrypted     = "true"
     tags                  = jsonencode(merge(local.common_tags, { Name = "acme-prod-primary" }))
